@@ -3,11 +3,7 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def home(request):
-    return render(request, 'todoapp/todo.html')
+    return render(request, 'todoapp/home.html', {})
 
-def register(request):
-    return render(request, 'todoapp/register.html')
-
-def loginpage(request):
-    return render(request, 'todoapp/login.html')
-
+def about(request):
+    return render(request, 'todoapp/about.html', {})
